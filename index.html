@@ -7,6 +7,18 @@
     <title>Escola Front-End Curso Git e GitHub</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/reset.css">
+    <title>jQuery UI Draggable - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+   
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script>
+    $( function() {
+      $( "#draggable" ).draggable();
+    } );
+    </script>
+
 </head>
 <body>
     <header>
@@ -29,7 +41,7 @@
             <li><a href="laboratorio.html"><img src="logo/lab.png" width="22">Laboratório</a></li>
             <li><a href="mapamental.html"><img src="logo/mapa mental.jpg" width="22">Mapa Mental</a></li>
             <li><a href="googlesala.html"><img src="logo/Google Sala.png" width="22">Google Sala</a></li>
-            <li><a href="linksuteis.html"><img src="logo/Links.png" width="22">Links</a></li>
+            <li><a href="linksuteis.html"><img src="logo/Links.png" width="22">Links Uteis</a></li>
             <li><a href="documentos.html"><img src="logo/Docs.png" width="22">Dosc</a></li>
             <li><a href="canalyoutube.html"><img src="logo/YouTube.png" width="22">YouTube</a></li>
             <li><a href="linkedin.html"><img src="logo/Linkedin.png" width="22">Linkedin</a></li>
@@ -43,8 +55,12 @@
    
 </section>
 
+<h1>Mural de Avisos <span class="badge badge-secondary">Novo</span></h1>
     <section id="area-principal">
-        <h1>Mural</h1>
+        
+        <div id="draggable" class="ui-widget-content">
+        
+        </div>
     </section>
    
    <!--
@@ -126,5 +142,6 @@
 
  <p id="texto-rodape">Curso de Git e GitHub - Jefferson Soares&copy 2022
  </footer>   
+
 </body>
 </html>
